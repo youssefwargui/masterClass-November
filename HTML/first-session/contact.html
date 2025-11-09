@@ -7,92 +7,87 @@
 </head>
 <body>
     <h1>Hello from contact</h1>
-     <a href="index.html">index</a>
-<br> <br>
+    <!-- Tbale : A structured way to display dat in rows colums -->
 
-     <a href="https://github.com/youssefwargui" target="_blank" >This is my github</a>
+    <table border="1" width="250">
+        <!-- Table Header -->
+        <thead>
+          <tr>
+            <th colspan="2">Full Name</th>
+            <!-- <th>Age</th> -->
+            <th>City</th>
+          </tr>
+        </thead>
+        <!-- Table body -->
+         <tbody>
+           <tr>
+            <td>Hafnaoui</td>
+            <td>Tunis1</td>
+            <td rowspan="2">Tunis</td>
+           </tr>
+           <tr>
+            <td>Mark</td>
+            <td>25</td>
+            <!-- <td>Texas</td> -->
+           </tr>
+         </tbody>
+    </table>
+    
+    <!-- a way to collect data from the user  -->
+    <h2>Inputs:</h2>
 
-<!-- table : a structured way to display dat in rows columns -->
-<table border="1" >
-    <!-- table header  -->
-    <thead>
-<tr>
-    <th>name</th>
-    <th>age</th>
-    <th>city</th>
-</tr>
-    </thead>
-    <!-- table body -->
-    <tbody>
-<tr>
-    <td>youssef</td>
-    <td>26</td>
-    <td>tunis</td>
-</tr>
-    </tbody>
-</table>
+    <form  action="signup.js">
+        <!-- text input -->
+         <label for="">First name</label>
+         <input type="text" placeholder="plz enter ur name!" required> <br><br>
+         <!-- Email input -->
+           <label for="">Email </label>
+         <input type="email" placeholder="plz enter ur email" ><br><br>
+         <!-- password -->
+ <label for="">Password </label>
+         <input type="password"  ><br><br>
+         <!-- Date input -->
+          <label for="">BirthDate </label>
+         <input type="date"  > <br><br>
 
+         <!-- Radio input -->
+          <label for="">Select Gender :</label>
+          <span>M.</span>
+          <input type="radio" name="genre"  >
+          <span>F.</span>
+          <input type="radio" name="genre" > <br><br>
 
-<!-- inputs -->
- <form >
-    <!-- text -->
-    <label for="">user name</label>
-<input type="text" placeholder="name">
+<!-- Color -->
+ <label for="">Select your favourite Color</label>
+ <input type="color" > <br><br>
+ <!-- Input file  -->
+  <label for="">Upload ur Resume</label>
+  <input type="file" accept="image/png"> <br> <br>
+
+  <!-- Select (drop down ) -->
+   <label for="">Select your spoken language :</label>
+<select multiple size="2" name="" id="">
+    <option value="ARB">Arabic</option>
+    <option value="FR">French</option>
+    <option value="EN">English</option>
+</select> <br><br>
+<!-- Number -->
+ <label for="">Number :</label>
+ <input type="number">
+
 <br><br>
-<!-- email -->
-    <label for="">email </label>
-<input type="email" placeholder="email">
-<br><br>
-<!-- password -->
-    <label for="">password</label>
-<input type="password" placeholder="password"> 
-<br><br>
-<!-- color -->
- <label for=""> color</label>
-<input type="color" >
-<br><br>
- <!-- file -->
-  <label for="">file</label>
-<input type="file" >
-<br><br>
-<br><br>
- <!-- Select (drop down) -->
-  <label for="">select your language :</label>
-  <select multiple size="2"  >
-  <option value="">arabic</option>
-  <option value="">frensh</option>
-  <option value="">english</option> 
-  </select>
-  <br><br>
-  <!-- number  -->
-    <label for="">number</label>
-<input type="number" >
-<br><br>
-   <!-- range -->
- <label for="">range</label>
-<input type="range" >
-<br><br>
+<label for="">Range:</label>
+<input type="range" name="" id=""><br><br>
 
- </form>
+<!-- Text area  -->
+ <label for="">Description</label>
+ <textarea maxlength="5" name="" id="">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ </textarea><br><br>
+ 
+<input type="button" value="Send">
+<button type="submit" >Send Button</button>
+    </form>
 
 </body>
 </html>
